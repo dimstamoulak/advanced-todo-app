@@ -1,0 +1,116 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #d4fc79, #96e6a1); // soft green background
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.todo-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 70px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.todo-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.todo-form input {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.todo-form button {
+  background-color: #00f2fe;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.todo-form button:hover {
+  background-color: #4facfe;
+}
+
+.filters {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.filters button {
+  background: rgba(255, 255, 255, 0.25);
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.filters button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.6rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.todo-list li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.todo-list input[type="checkbox"] {
+  margin-right: 1rem;
+}
+
+.todo-list button {
+  background: transparent;
+  border: none;
+  color: #ff6b6b;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+input[type='text'],
+button {
+  border-radius: 8px;
+}
+
+.list-group-item-success {
+  background-color: #d4edda;
+}
